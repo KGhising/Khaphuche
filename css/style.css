@@ -1,7 +1,5 @@
 /* colors
-    #007792
-    #C8C8C8
-    #013A4A
+    #094266
 */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 *{
@@ -10,29 +8,30 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #C8C8C8;
+    background-color: #0E233F;
 }
 h3, h1, h4{
     font-family: Arial, Helvetica, sans-serif;
-    color: #013A4A;
+    color: #92C9E6;
     font-weight: bold;
 }
-p, label{
-    color: #013A4A;
+p, label, button, input{
+    color: #92C9E6;
     font-family: Arial, Helvetica, sans-serif;
 }
-.container{
-    width: 80%;
-    margin: auto;
-}
-/* nav bar */
-img{
-    width: 150px;   
+/* main and nav bar */
+main{
+    height: 110vh;
+    background-size: cover;
+    background-attachment: fixed;
 }
 nav{
+    padding-top: 20px;
     display: flex;
-    justify-content: space-between; 
-    margin-top: 10px;  
+    justify-content: space-around; 
+}
+nav img{
+    width: 100px;   
 }
 nav ul{
     display: flex;
@@ -45,65 +44,80 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    color: #013A4A;
+    color: #094266;
     font-weight: bold;
 }
-/* main */
-main{
-    margin-top: 10px;
-}
-.hero-section{
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-}
-.hero-section img{
-    width: 100%;
+nav ul li a:hover{
+    color: #006B9A;
 }
 /* specialities */
 .specialities{
-    margin-top: 80px;
+    margin-top: 200px;
     display: grid;
     grid-template-columns: auto auto auto;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
 }
 .specialities .specialities-items{
-    background-color: #007792;
-    padding: 30px;
-    border-radius: 10px;
+    background-color: #006B9A;
+    padding: 50px 30px;
+    border-radius: 80px 10px;
 }
-
+.specialities-items p{
+    margin-top: 5px;
+}
 .specialities h3{
     margin-top: 20px;
 }
 .specialities i{
-    color: #013A4A;
+    color: #0E233F;
 }
 /* about Khaphuche */
 .about-section{
-    margin-top: 80px;
+    margin-top: 200px;
     display: grid;
     grid-template-columns: auto auto;
+    background-color: #006B9A;
+}
+.about-section h3{
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
 }
 .about-section p{
-    margin-top: 20px;
-    padding-right: 10px;
+    padding: 20px 40px;
+    text-align: center;
+    line-height: 1.6;
+}
+.photo{
+    background-attachment: fixed;
+    background-size: cover;
+    width: 600px;
+    height: 400px;
 }
 .photo img{
     width: 100%;
-    border-radius: 10px;
+    margin-top: 4px;
+    
 }
 
 /* service and packages */
+.service{
+    margin-top: 200px;
+}
+.service h1{
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+}
 .service-package{
-    margin-top: 50px;
+    margin-top: 100px;
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-around;
 }
 .service-package .packages{
-    background-color: #007792;
     border-radius: 10px;
     width: 300px;
     height: 200px;
@@ -113,21 +127,27 @@ main{
     background-image: url('https://www.tourguideinnepal.com/wp-content/uploads/2019/10/visit-nepal2020.jpg');
     background-size: cover;
 }
+.service-package .family-pack{
+    background-image: url('https://www.trekking-in-nepal.net/website/var/tmp/image-thumbnails/0/4511/thumb__auto_7e7e0dad23d3cca166d67825e3368bc6/Poon-Hill-Trek-for-families.JPG.jpeg');
+    background-size: cover;
+}
+.service-package .nepali{
+    background-image: url('https://s3.amazonaws.com/blogsmedia/blog/wp-content/uploads/2018/09/06203700/IMG_8441.jpg');
+    background-size: cover;
+}
 .packages h3{
     margin-top: 80px;
-    background-color: rgb(0,255,0, 0.5);
+    background-color: rgb(0, 107, 154, 0.9);
     padding: 5px 0;
 }
 /* hire car */
 .hire-car{
-    margin-top: 50px;
+    margin-top: 200px;
     display: flex;
     justify-content: center;
-    border: #007792 1px solid;
 }
 form{
     margin: 50px 0;
-    text-align: center;
 }
 .hire-car h1{
     font-size: 40px;
@@ -135,74 +155,80 @@ form{
 }
 .hire-car label{
     font-weight: bold;
-    display: flex;
-    justify-content: start;
 }
 .hire-car input{
     margin-top: 10px;
     padding: 8px;
     width: 400px;
-    border: 1px solid #013A4A;
+    border: 1px solid #92C9E6;
     background-color: transparent;
-    color: #013A4A;
 }
 .hire-car button{
     cursor: pointer;
     margin-top: 20px;
     width: 100px;
-    color: #013A4A;
     font-size: 20px;
     padding: 5px;
-    border: none;
+    border: 1px solid #006B9A;
     border-radius: 2px;
-    background-color: #007792;
+    background-color: transparent;
+}
+.hire-car button:hover{
+    background-color: #006B9A;
 }
 /* merchant */
 .merchant{
-    margin-top: 50px;
+    margin-top: 200px;
     margin-bottom: 50px;
     text-align: center;
 }
 .merchant h1{
     font-size: 30px;
+    text-decoration: underline;
 }
 .cards{
-    margin-top: 50px;
+    margin-top: 100px;
     display: flex;
     justify-content: space-around;
 }
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
     width: 30%;
     border-radius: 5px;
   }
-  .container{
-      margin-top: 20px;
-      margin-bottom: 20px;
-  }
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  .card img {
+.container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.card img {
     border-radius: 5px 5px 0 0;
     width: 100%;
-  }
-  .card button{
-      cursor: pointer;
-      font-size: 20px;
-      font-family: Arial, Helvetica, sans-serif;
-      padding: 3px 15px; background-color: #007792;
-      border: none;
-      border-radius: 2px;
-      color: #013A4A;
-  }
-  .buy-button p{
-      align-self: center;
-  }
-  .buy-button{
-      margin-top: 20px;
-      display: flex;
-      justify-content: space-around;
-  }
+}
+.card button{
+    cursor: pointer;
+    font-size: 20px;
+    padding: 3px 15px; 
+    border: 1px solid #006B9A;
+    background-color: transparent;
+    border-radius: 2px;
+}
+.card button:hover{
+    background-color: #006B9A;
+}
+.buy-button p{
+    align-self: center;
+}
+.buy-button{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* shadow */
+.specialities-items, .card, .packages{ 
+    box-shadow: 4px 4px 4px  rgba(0, 0, 0), -2px -2px 4px  rgba(255, 255, 255);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.specialities-items:hover, .card:hover, .packages:hover{
+    box-shadow: 4px 4px 4px rgba(146, 201, 230);
+}

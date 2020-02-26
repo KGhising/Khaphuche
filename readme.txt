@@ -13,7 +13,7 @@ landing page
 -khaphuche.com
 -only html/css
 -clean and simple
--add car hiring and t-shirts ecpmmerce
+-add car hiring and t-shirts ecommerce
 
 
 reference
